@@ -1,0 +1,2 @@
+include ':Sight Words'
+rootProject.name = "Site Words"
