@@ -12,7 +12,7 @@
         android:layout_height="350dp"
         android:gravity="center"
         android:text="TextView"
-        android:textSize="36sp"
+        android:textSize="100sp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="174dp" />
 
