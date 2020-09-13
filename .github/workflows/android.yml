@@ -40,5 +40,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: '/home/runner/work/SightWords/SightWords/Sight Words/build/outputs/apk/debug/app-debug.apk'
+          path: '/home/runner/work/SightWords/SightWords/Sight Words/build/outputs/apk/debug/Sight Words-debug.apk'
 
