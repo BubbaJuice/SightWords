@@ -31,7 +31,9 @@ jobs:
         with:
           java-version: 1.8
       - name: Build debug APK
-        run: bash ./gradlew app:assembleDebug --stacktrace
+        run: bash ./gradlew assembleDebug --stacktrace
+      - name: Find apk
+        run: bash find . -type f -name \*.apk
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
