@@ -31,9 +31,9 @@ jobs:
         with:
           java-version: 1.8
       - name: Build debug APK
-        run: bash ./gradlew assembleDebug --stacktrace
+        run: bash ./gradlew app:assembleDebug --stacktrace
       - name: Upload APK
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: app
-          path: ${{ github.workspace }}/app/build/outputs/apk/debug/Sight\ Words-debug.apk
+          path: ${{ github.workspace }}/build/outputs/apk/debug/app-debug.apk
