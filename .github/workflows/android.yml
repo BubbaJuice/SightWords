@@ -32,8 +32,13 @@ jobs:
           java-version: 1.8
       - name: Build debug APK
         run: bash ./gradlew assembleDebug --stacktrace
+      - name: Pwd
+        run: 'pwd'
+      - name: Find apk
+        run: 'find /home/runner/work -type f -name \*.apk'
       - name: Upload APK
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: app
-          path: ${{ github.workspace }}/app/build/outputs/apk/debug/Sight\ Words-debug.apk
+          path: '/home/runner/work/SightWords/SightWords/Sight Words/build/outputs/apk/debug/Sight Words-debug.apk'
+
