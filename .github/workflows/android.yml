@@ -35,10 +35,10 @@ jobs:
       - name: Pwd
         run: 'pwd'
       - name: Find apk
-        run: 'find . -type f -name \*.apk'
+        run: 'find /home/runner/work -type f -name \*.apk'
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: './Sight Words/build/outputs/apk/debug/app-debug.apk'
+          path: '/home/runner/work/SightWords/SightWords/Sight Words/build/outputs/apk/debug/app-debug.apk'
 
