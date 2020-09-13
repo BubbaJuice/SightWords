@@ -38,4 +38,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: ${{ github.workspace }}/build/outputs/apk/debug/app-debug.apk
+          path: './Sight Words/build/outputs/apk/debug/app-debug.apk'
+
