@@ -33,7 +33,7 @@ jobs:
       - name: Build debug APK
         run: bash ./gradlew assembleDebug --stacktrace
       - name: Find apk
-        run: bash find . -type f -name \*.apk
+        run: 'find . -type f -name \*.apk'
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
